@@ -1,0 +1,54 @@
+body {
+  background-color: #FAC828;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.3fr 3fr;
+  overflow-y: hidden;
+}
+
+.headerPage {
+  width: 100%;
+  background-color: black;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.main {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-template-columns: 4fr 2fr;
+}
+
+.sectionAbout {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.sectionDelivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+  background-image: url("../../assets/img/textureWhite.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sectionDelivery__decorationWrapper {
+  display: flex;
+  position: relative;
+  right: 10rem;
+  top: 5rem;
+}
+.sectionDelivery__hashtagImg {
+  height: 18rem;
+}
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .sectionDelivery {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
